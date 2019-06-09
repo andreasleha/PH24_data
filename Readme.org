@@ -2,7 +2,6 @@
 #+OPTIONS: toc:nil num:nil
 
 
-* Preamble						      :ignoreheading:
 #+md: <!-- Readme.md is generated from Readme.org. Please edit that file -->
 
 #+begin_src emacs-lisp :exports none :results none
@@ -11,10 +10,6 @@
     (file-name-nondirectory (org-babel-temp-file "./Readme-fig-" ".png")))
 #+end_src
 
-
-
-* TOC 							      :ignoreheading:
-# #+TOC: headlines 2
 
 
 * Data Description
@@ -87,7 +82,6 @@ The data can be loaded easily via
 
 
 
-* Local Variables for the *.md file 			      :ignoreheading:
 
 #+begin_markdown
 <!--

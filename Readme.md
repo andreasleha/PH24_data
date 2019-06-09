@@ -1,11 +1,4 @@
-
-
-# Preamble     :ignoreheading:
-
 <!-- Readme.md is generated from Readme.org. Please edit that file -->
-
-
-# TOC     :ignoreheading:
 
 
 # Data Description
@@ -76,9 +69,6 @@ The data can be loaded easily via
 ## read data
 dat <- readRDS("PH24.RDS.RData")
 ```
-
-
-# Local Variables for the \*.md file     :ignoreheading:
 
 <div class="markdown">
 <!&#x2013;
