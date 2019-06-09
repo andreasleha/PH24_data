@@ -1,0 +1,102 @@
+#+TITLE: Baseline and Echocardiographic Data of Potential Pulmonary Hypertension Patients
+#+OPTIONS: toc:nil num:nil
+
+
+* Preamble						      :ignoreheading:
+#+md: <!-- Readme.md is generated from Readme.org. Please edit that file -->
+
+#+begin_src emacs-lisp :exports none :results none
+  (defun readmeplot ()
+    ""
+    (file-name-nondirectory (org-babel-temp-file "./Readme-fig-" ".png")))
+#+end_src
+
+
+
+* TOC 							      :ignoreheading:
+# #+TOC: headlines 2
+
+
+* Data Description
+
+This repository contains data used in
+
+- Hellenkamp K, et al. (2018) Echocardiographic Estimation of Mean Pulmonary Artery Pressure: A Comparison of Different Approaches to Assign the Likelihood of Pulmonary Hypertension. Journal of the American Society of Echocardiography : official publication of the American Society of Echocardiography 31 (1):89-98. doi:10.1016/j.echo.2017.09.009
+- Leha A, et al. A machine learning approach for the prediction of pulmonary hypertension, under review
+
+It comprises data for 90 patients with invasively measured PAP within
+24 hours after echocardiographic assessment.
+
+There are 4 baseline variables
+
+- age [years]
+- sex
+- BMI (body mass index) [kg/m²]
+- BSA (body surface area) [m²]
+
+and 21 echocardiographic measurements
+
+- IVSd [mm]
+- LVEDD [mm]
+- PW [mm]
+- LAD [mm]
+- EF [%]
+- RVD1 [mm]
+- RVD2 [mm]
+- RVD3 [mm]
+- RVenlargement [0/1]
+- TAPSE [mm]
+- RAPestimated [mmHg]
+- RAP15 (RAP >= 15) [0/1]
+- AS [0/1/2/3]
+- AR [0/1/2/3]
+- MS [0/1/2/3]
+- MR [0/1/2/3]
+- TR [0/1/2/3]
+- TRVmax [m/s]
+- TRVm [m/s]
+- PVAT [ms]
+- TRPm [mmHg]
+
+The gold-standard (invasively obtained) outcome is given in
+
+- PAPm_invasive
+- PH_invasive (binarized at 25)
+
+For reference, the established estimation according to Aduen J, et
+al., Accuracy and precision of three echocardiographic methods for
+estimating mean pulmonary artery pressure, doi:10.1378/chest.10-0126,
+is available in column
+
+- aduen
+
+* Data Formats
+
+The data set is available as R object (=RDS.RData=) and Excel table
+(=xlsx=).
+
+
+** Example Usage
+
+The data can be loaded easily via
+
+#+begin_src R :exports code :results none :eval never
+  ## read data
+  dat <- readRDS("PH24.RDS.RData")
+#+end_src
+
+
+
+* Local Variables for the *.md file 			      :ignoreheading:
+
+#+begin_markdown
+<!--
+Local Variables:
+ mode: gfm
+ markdown-command: "marked"
+End:
+-->
+#+end_markdown
+
+* Ignore Local Variables above 					   :noexport:
+
