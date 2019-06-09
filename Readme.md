@@ -70,6 +70,11 @@ The data can be loaded easily via
 dat <- readRDS("PH24.RDS.RData")
 ```
 
+
+# License
+
+The data are published under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
+
 <div class="markdown">
 <!&#x2013;
 Local Variables:

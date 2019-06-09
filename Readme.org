@@ -82,6 +82,10 @@ The data can be loaded easily via
 
 
 
+* License
+
+The data are published under [[https://creativecommons.org/licenses/by/4.0/][CC-BY-4.0]].
+
 
 #+begin_markdown
 <!--
